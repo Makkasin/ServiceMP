@@ -2,6 +2,7 @@
 //"registrationTime":"2019-07-19T12:46:56Z",
 //"statusChangeTime":"2019-07-19T12:46:56Z",
 //"status":"Queued","filesCount":1,"requestStatusDelay":10000}
+//test
 
 Функция ПолучитьСоединение()
 	
