@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="272a4ccf-73ab-4806-8fc2-b6d88b870802">
-  <name>Конфигурация_ServiceMP</name>
-  <synonym>
-    <key>ru</key>
-    <value>Конфигурация service MP</value>
-  </synonym>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="70ccb0be-11ec-4152-b8c3-93a5f5c8dffe">
+  <name>Конфигурация</name>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="d1c3c66f-4a9a-4356-91f1-1a14ad303c55"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="e04bb8b7-4594-4ef2-8aac-da9c8477e1ac"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="3481be03-0560-45ab-afbf-b315a4865ecf"/>
@@ -25,16 +21,12 @@
     </functionality>
   </usedMobileApplicationFunctionalities>
   <defaultLanguage>Language.Русский</defaultLanguage>
-  <vendorInformationAddress>
-    <key>ru</key>
-    <value>тест1</value>
-  </vendorInformationAddress>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <compatibilityMode>8.3.22</compatibilityMode>
-  <languages uuid="1ccec4ef-c75d-4cd5-88a4-4dca1abf304e">
+  <compatibilityMode>8.3.13</compatibilityMode>
+  <languages uuid="603928fe-b47c-4625-94a3-0ea7c2d95c3e">
     <name>Русский</name>
     <synonym>
       <key>ru</key>
@@ -42,4 +34,33 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <commonTemplates>CommonTemplate.ДанныеПоДнямРождения</commonTemplates>
+  <commonModules>CommonModule.глViber</commonModules>
+  <commonModules>CommonModule.глАлиса</commonModules>
+  <commonModules>CommonModule.глВыгрузкаДанных</commonModules>
+  <commonModules>CommonModule.глКросАпи</commonModules>
+  <commonModules>CommonModule.глОбщий</commonModules>
+  <commonModules>CommonModule.глПочта</commonModules>
+  <commonModules>CommonModule.РаботаABBYY</commonModules>
+  <commonModules>CommonModule.РаспознаваниеGFM</commonModules>
+  <httpServices>HTTPService.ksAPI</httpServices>
+  <scheduledJobs>ScheduledJob.ЗагрузкаДанныхИзДО</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ЗапросРезультатаABBYY</scheduledJobs>
+  <scheduledJobs>ScheduledJob.РаботаСОчередью</scheduledJobs>
+  <catalogs>Catalog.Subscriber</catalogs>
+  <catalogs>Catalog.ЗапросыViber</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.Планшеты</catalogs>
+  <catalogs>Catalog.Производители</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
+  <dataProcessors>DataProcessor.КонсольЗаданий</dataProcessors>
+  <informationRegisters>InformationRegister.ВспомогательныеДанные</informationRegisters>
+  <informationRegisters>InformationRegister.ВыполнениеРегламентныхЗаданий</informationRegisters>
+  <informationRegisters>InformationRegister.ЗапросыРаспознавания</informationRegisters>
+  <informationRegisters>InformationRegister.ксЗапросНаНовуюНоменклатуру</informationRegisters>
+  <informationRegisters>InformationRegister.ксИдДейвайсов</informationRegisters>
+  <informationRegisters>InformationRegister.ОчередьЕрЛог</informationRegisters>
+  <informationRegisters>InformationRegister.РегистрНумерации</informationRegisters>
+  <informationRegisters>InformationRegister.ШтрихКоды</informationRegisters>
 </mdclass:Configuration>
