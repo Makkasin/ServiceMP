@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc696b32-0f18-4033-85a4-1fa901c27b41">
+  <producedTypes>
+    <selectionType typeId="84b753a1-613f-4987-b656-6f3ec87e250b" valueTypeId="6e121c45-810f-4e0a-94b1-0e43abbf9241"/>
+    <listType typeId="709d212e-3d1e-4b00-8025-1b62f17fcab9" valueTypeId="1e0d3137-7bf7-4352-aeed-16dbd16349ea"/>
+    <managerType typeId="23308104-12de-43be-b7d0-90c5440ec242" valueTypeId="fadb73e1-dfd5-4c04-bc0b-cf997f613e81"/>
+    <recordSetType typeId="2d1468f4-70f9-410e-a81e-4b4e3aa764ce" valueTypeId="c68a342e-f481-4c42-b267-7ee604df417e"/>
+    <recordKeyType typeId="dc968e5f-7598-4a29-985e-17c7863ec8f8" valueTypeId="281b25d9-6cf5-4af8-af4a-b6c59ddf745a"/>
+    <recordType typeId="b5705b3a-eb34-4e13-95d2-d28aab3cfdd9" valueTypeId="f8584742-af2c-49bf-969c-cf973a0358e8"/>
+    <recordManagerType typeId="31ead244-cbc2-4746-890f-cdd4d9046b0f" valueTypeId="b0d0e05e-b8d3-4851-bb75-4df93b4b4350"/>
+  </producedTypes>
+  <name>ВыполнениеРегламентныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнение регламентных заданий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f966f7a2-e98e-4b17-89b4-29a7a8538513">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="f923daab-fd0f-418b-b70b-ed5307ad1975">
+    <name>РеглЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регл. задание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

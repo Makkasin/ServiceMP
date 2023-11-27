@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29432c8c-9bfb-406f-a295-6fe13c73af06">
+  <producedTypes>
+    <objectType typeId="70d2cd7a-494b-4927-bd03-986960cfeeba" valueTypeId="80a189e9-ef65-48f8-a6db-d1636ac0db1b"/>
+    <refType typeId="77281e14-48ab-4a1c-8fbb-7192e4c14b43" valueTypeId="50d777e5-ea22-46a9-837a-9b5f93ad3e01"/>
+    <selectionType typeId="9d3d1a2c-123d-4026-91f1-5083178c6f7a" valueTypeId="b9abc9e5-b204-496b-9cc3-2bb3c7b063db"/>
+    <listType typeId="0b1dc0b7-88be-48fe-9222-445af432593e" valueTypeId="cdf34c67-6211-4c0c-bf94-5edbe2acacd8"/>
+    <managerType typeId="31d551c1-c62d-4eaf-a0ba-e9eb8ef845f7" valueTypeId="6c86d04f-3926-484b-8edf-675fe1bb1068"/>
+  </producedTypes>
+  <name>ЗапросыViber</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запросы viber</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЗапросыViber.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЗапросыViber.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЗапросыViber.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="400bf912-610b-4101-a071-0adaeff89e37">
+    <name>Тело</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="798524f1-489f-486a-a682-9b57ad83e2c5">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>222</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10c2b48a-be18-4372-aaa7-4cd4bd4cd7aa">
+    <name>Обработан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработан</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ff23921f-0696-4ccd-ac23-55a9842c6a5e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;#APIKEY#"  type="text/javascript"></script>
+		<script type="text/javascript" src="http://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+
+			var myMap;
+			var geoObjects;
+			var trafficControl;
+			var myPlacemark;
+			var myRoute;
+			var dlinamar;
+			var IDmetki;
+
+			ymaps.ready(init);
+
+			function init() {
+				myMap = new ymaps.Map('map', {
+					center: [&широта,&долгота],
+					zoom: 9,
+					controls: ['zoomControl', 'typeSelector']
+				}, {
+					searchControlProvider: 'yandex#search'
+				}),
+				myMap.behaviors.enable(['drag']),
+
+				geoObjects = [];
+
+				trafficControl = new ymaps.control.TrafficControl({ state: {
+					providerKey: 'traffic#actual',
+					trafficShown: false
+				}});
+				myMap.controls.add(trafficControl);
+				trafficControl.getProvider('traffic#actual').state.set('infoLayerShown', true);
+
+				window.onerror = myOnError;
+
+			    myMap.events.add('click', function (e) {
+			            var coords = e.get('coords');
+			            myMap.setCenter([coords[0].toPrecision(6), coords[1].toPrecision(6)]);
+		    	});
+		    	
+		    	myPlacemark = new ymaps.Placemark(
+					[&широта,&долгота],
+					{placemarkId: 0
+				}, {
+					preset: 'islands#blueDotIcon'
+					});
+					
+				geoObjects[0] = myPlacemark;
+
+				myMap.geoObjects.add(geoObjects[0]);
+
+			
+			}
+
+			function myOnError(msg, url, lno) {return true}
+
+			function addMarker(coordin1, coordin2, nomerID) {
+				myPlacemark = new ymaps.Placemark(
+					[coordin1,coordin2],
+					{placemarkId: nomerID
+				}, {
+					preset: 'islands#blueDotIcon'
+					});
+					
+				geoObjects[nomerID] = myPlacemark;
+
+				myMap.geoObjects.add(geoObjects[nomerID]);
+
+			}
+
+			function UdalitTekMetku(id) {
+				myMap.geoObjects.remove(geoObjects[id]); // удаляет нужную метку, нужно правильно выбрать id
+				
+			}
+
+			function OchistitKartu() {
+				// Удаляет все метки
+				myMap.geoObjects.removeAll();
+				myRoute && myMap.geoObjects.remove(myRoute);
+				geoObjects = [];
+			
+			}
+
+			function OchistitMarshrutes() {
+				myRoute && myMap.geoObjects.remove(myRoute);
+			
+			}
+
+			function Marshrutes(coordis) {
+				arraycoords = JSON.parse("[" + coordis + "]");
+				ymaps.route(arraycoords, {
+					viewAutoApply: true, // не выводить промежуточные метки
+					mapStateAutoApply: true, // автоматически позиционировать карту
+				}).then(function (route) {
+						route.getPaths().options.set({strokeColor: '0000ffff', strokeWidth: 5, opacity: 0.9});
+						route.getHumanLength();
+						myMap.geoObjects.add(myRoute = route.getPaths());
+					}
+				);
+
+			}
+
+		</script>
+		<style>
+			html { height: 100% }
+			body { height: 100%; margin: 0px; padding: 0px }
+			.wrapper { height: 100% }
+			#map { height: 100% }
+			#dlinamarshruta {
+			    position: absolute;
+			    left: 50%;
+			    top: 10px;
+			    width: max-content;
+			    height: 30px;
+				transform: translatex(-50%);
+				font-weight: 800;
+				font-size: 20px;
+			}
+
+			.ballon_header { font-size: 16px; margin-top: 0; margin-bottom: 10px; color: #708090; }
+			.ballon_footer { font-size: 12px; text-align: right; border-top: 1px solid #7D7D7D; color: #7D7D7D; margin-top: 10px; }
+		</style>
+	</head>
+		<body>
+			<div class="wrapper">
+				<div id="map"></div>
+			</div>
+		</body>
+</html>

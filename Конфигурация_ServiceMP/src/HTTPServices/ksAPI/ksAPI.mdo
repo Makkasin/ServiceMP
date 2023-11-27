@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="542ecbeb-b725-4faa-8719-b9d69d636755">
+  <name>ksAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ks API</value>
+  </synonym>
+  <rootURL>ksAPI</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="afad6e39-fd5c-46af-b99f-58fd6d22864c">
+    <name>GET</name>
+    <synonym>
+      <key>ru</key>
+      <value>GET</value>
+    </synonym>
+    <template>/{ИмяМетода}</template>
+    <methods uuid="ee9319e9-54ae-4f5a-84e2-ca97ea61a8d5">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>GETGET</handler>
+    </methods>
+    <methods uuid="5ebb4014-8ffe-448c-9751-408553d04e5d">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>GETGET</handler>
+    </methods>
+    <methods uuid="b2eefcc0-5942-4dd5-9ec9-3aaac67b9d8f">
+      <name>PUT</name>
+      <synonym>
+        <key>ru</key>
+        <value>PUT</value>
+      </synonym>
+      <httpMethod>PUT</httpMethod>
+      <handler>GETGET</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

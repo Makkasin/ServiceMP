@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4d18e17-94f5-4680-9e64-2e49ea37d2c0">
+  <producedTypes>
+    <selectionType typeId="81748563-83a0-40fd-a59c-fc7b291a2fc8" valueTypeId="5e58ebd9-13cd-439b-a4e0-119e87461c36"/>
+    <listType typeId="77050f7d-17f7-4a78-9db9-dd859ee09a84" valueTypeId="4123016c-c968-4eb3-ad57-db41a0df459e"/>
+    <managerType typeId="c50db567-9dfc-4cdb-80da-3aa413e81e45" valueTypeId="04102329-b699-463d-9c1c-47f038283a28"/>
+    <recordSetType typeId="d91268aa-89ce-43b5-9478-812d722da5bf" valueTypeId="e6e65ea5-55c8-4270-8fd5-53813feae62b"/>
+    <recordKeyType typeId="8e382a49-d86c-4607-a5c6-74f4fb8e2bd2" valueTypeId="1a970cec-d883-486a-83c9-41f29b1b5ec8"/>
+    <recordType typeId="37155d58-6718-4a52-ae7b-3d49fae187d0" valueTypeId="a48a3751-0ea3-4de8-a2e6-9c4d2d726191"/>
+    <recordManagerType typeId="ea46d2ae-8230-466c-95f9-18c2dc0a2a74" valueTypeId="957a405e-b161-4417-a853-2ab305116d09"/>
+  </producedTypes>
+  <name>РегистрНумерации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр нумерации</value>
+  </synonym>
+  <comment>КС</comment>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.РегистрНумерации.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1a780620-a76e-4f4e-891e-b8ee2a1f1f36">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7d48c9dd-c618-4d86-8696-42c3165d4c07">
+    <name>ОбъектМета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект мета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>31</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="74083dc5-080d-4bfa-8573-253465cfbb9b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

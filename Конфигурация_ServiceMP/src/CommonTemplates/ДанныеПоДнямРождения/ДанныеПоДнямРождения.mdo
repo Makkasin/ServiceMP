@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c240206e-62ad-40b8-a298-adcac8ad7e5b">
+  <name>ДанныеПоДнямРождения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные по дням рождения</value>
+  </synonym>
+</mdclass:CommonTemplate>

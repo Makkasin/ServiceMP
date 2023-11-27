@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c78c4341-ab42-4e99-a4ef-9bd4e512023e">
+  <name>ЗагрузкаДанныхИзДО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка данных из ДО</value>
+  </synonym>
+  <methodName>CommonModule.глВыгрузкаДанных.ЗагрузкаДанныхИзДО</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

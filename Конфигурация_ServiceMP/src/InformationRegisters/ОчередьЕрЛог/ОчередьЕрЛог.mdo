@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6b72dce-3cf9-4e39-962b-110001911e67">
+  <producedTypes>
+    <selectionType typeId="b6432876-1060-401e-b279-981bee26a77a" valueTypeId="232da0c0-b50b-4bf9-a71c-0b6f9c84ea3c"/>
+    <listType typeId="02eea6c9-991b-4d9b-a285-2a11adc0f73b" valueTypeId="5652336a-be33-4427-bf04-8f3185d1759d"/>
+    <managerType typeId="b765bc46-f25b-4d77-b120-8b7401c3f31c" valueTypeId="8654c352-646b-45c6-816e-0383eb5f4a27"/>
+    <recordSetType typeId="79b19303-fe2a-478c-ad3f-87141904cf0c" valueTypeId="80fd2a42-b5bd-43eb-a715-d38e07e9a6e9"/>
+    <recordKeyType typeId="dec6884d-ce3b-4ef5-9c6b-42117e61cb4c" valueTypeId="d6a6a821-89b0-4568-b573-b2316b600b79"/>
+    <recordType typeId="336f374e-d169-4aa6-9172-3a941cbdfbd7" valueTypeId="e3abe067-f14d-425f-a20e-7e4c7947bfbe"/>
+    <recordManagerType typeId="dc2c74ae-574d-4596-8427-80b79e662bea" valueTypeId="4d1798c6-46f4-4151-835c-bf30a52c0482"/>
+  </producedTypes>
+  <name>ОчередьЕрЛог</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь ер лог</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="65faaa90-7e5a-4390-9f78-5d47678fa4e6">
+    <name>хрДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хр данные</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5746cf10-fd3d-4e65-b900-6327137ad335">
+    <name>Лог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лог</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>77</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="5a9b7fe8-f1dc-46ed-a2bc-9200fc81e404">
+    <name>ид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ид</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

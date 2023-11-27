@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b84ab849-512f-49bd-b333-f59a559e755f">
+  <producedTypes>
+    <selectionType typeId="215dea04-9285-41b5-a9fc-1f4a38fe13d6" valueTypeId="f56c6abd-42bd-4f91-9c3b-0f659b1d2421"/>
+    <listType typeId="33a91b6c-ac1a-4d78-a04e-8bdfb3ea17f0" valueTypeId="f402abeb-4a61-4e66-ae54-a399d6c8469e"/>
+    <managerType typeId="b247946c-5cfe-4c63-b12c-dfbe3b209fd5" valueTypeId="87c248b4-f1e4-4381-a4ee-a49c5293575b"/>
+    <recordSetType typeId="0daf12df-4c89-4aa5-a0f4-08d15823c13a" valueTypeId="78870e7d-a373-4055-b1ea-ff59f5bb633b"/>
+    <recordKeyType typeId="ced87a41-cba7-443a-acaa-a46ad81a862d" valueTypeId="dbba7ed8-3bd0-4773-94d3-52d8f2ea6b6e"/>
+    <recordType typeId="dfcaeba2-d343-48f9-b508-867abceb4ba6" valueTypeId="43771814-3bf3-43c1-8615-9e7a5b6fece9"/>
+    <recordManagerType typeId="2da9ee01-8600-468e-8f49-ce68e416ab70" valueTypeId="eba0d881-84d1-4a6d-a599-b8cc1ac3b608"/>
+  </producedTypes>
+  <name>ВспомогательныеДанные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вспомогательные данные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="4b691f46-1741-4f22-9fa4-e141568874ae">
+    <name>ДатаОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обновления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e88187cc-ab4b-4b3c-8675-5e313de69dbc">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="6fd31e4d-a359-42cd-8122-09010fc63249">
+    <name>ИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

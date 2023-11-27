@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cdf45ce-cf37-4ebb-9309-9e028655e6b9">
+  <name>РаботаСОчередью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с очередью</value>
+  </synonym>
+  <methodName>CommonModule.глВыгрузкаДанных.РаботаСОчередью</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>
